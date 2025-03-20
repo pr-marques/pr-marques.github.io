@@ -1,0 +1,59 @@
+header {
+
+    background-color: yellow;
+    width: 300px;
+
+    @media #{$medium} {
+        width: 500px;
+    }
+
+    nav {
+        background-color: pink;
+    }
+
+
+}
+
+
+header {
+
+    > nav {
+        background-color: pink;
+    }
+
+}
+
+header {
+
+    &:after {
+        content: "yo";
+        font-size: 50px;
+    }
+      
+}
+
+.test1 {
+    &.test2 {
+        background-color: tomato;
+    }
+}
+
+%btn {
+    font-size: 40px;
+    border: 1px solid black;
+    border-radius: 100px;
+    padding: 10px 20px;
+}
+
+.btn2 {
+    @extend %btn;
+    background-color: blueviolet;
+}
+
+
+
+
+
+.btn2 {
+    @include example(red);
+}

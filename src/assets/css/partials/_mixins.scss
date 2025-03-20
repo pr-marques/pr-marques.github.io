@@ -1,0 +1,4 @@
+@mixin example($bgcolor) {
+    border: 10px solid darken($bgcolor, 20%);
+    background-color: $bgcolor;
+}
