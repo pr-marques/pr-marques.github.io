@@ -4,12 +4,17 @@ header {
     background: linear-gradient(0deg, rgba(255, 227, 255, 0.01) 0%, rgba(255, 227, 255, 0.01) 100%), rgba(255, 255, 255, 0.75);
     background-blend-mode: lighten, normal;
     backdrop-filter: blur(100px);
+
     width: 100%;
+    height: 88px;
     position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
 
     nav {
         display: flex;
-        height: 88px;
         justify-content: space-between;
         align-items: center;
         align-self: stretch;
@@ -29,10 +34,28 @@ header {
             text-decoration: none;
             color: #2A2A2A;
             padding: 10px 15px; // Add padding for better clickability
-            &:hover {
-                border-bottom: 1px solid #CF00A9;
-            }
         }
     }
 
+    .nav-links {
+        display: none;
+    }
+
+}
+
+
+@media (min-width: 768px) {
+    header {
+        nav {
+            a {
+                &:hover {
+                    border-bottom: 1px solid #CF00A9;
+                }
+            }
+        }
+
+        .nav-links {
+            display: inline;
+        }
+    }
 }

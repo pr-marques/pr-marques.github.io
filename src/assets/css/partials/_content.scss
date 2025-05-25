@@ -19,13 +19,13 @@ img {
         linear-gradient(0deg, #EEE 0%, #EEE 100%), #F2F2F2;
 
     padding: 16px;
-    height: 80dvh;
+    height: 80svh;
     display: flex;
     align-items: end;
 
     h1 {
         font-family: 'Tobias', serif;
-        font-weight: thin;
+        font-weight: 100;
         font-style: italic;
         font-size: 4rem;
         line-height: 1.2;
@@ -58,7 +58,7 @@ img {
 }
 
 .section-header {
-    width: 100%;
+    max-width: 100%;
     padding: 32px 16px 0px 16px;
     display: flex;
     flex-direction: row;
