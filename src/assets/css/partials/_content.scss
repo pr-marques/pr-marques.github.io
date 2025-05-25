@@ -1,3 +1,128 @@
+
+@font-face {
+    font-family: 'NeueMontreal';
+    src: url('/fonts/NeueMontreal/PPNeueMontreal-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NeueMontreal';
+    src: url('/fonts/NeueMontreal/PPNeueMontreal-Medium.woff') format('woff');
+    font-weight: medium;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NeueMontreal';
+    src: url('/fonts/NeueMontreal/PPNeueMontreal-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NeueMontreal';
+    src: url('/fonts/NeueMontreal/PPNeueMontreal-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tobias';
+    src: url('/fonts/Tobias/TobiasTRIAL-RegularItalic.woff') format('woff');
+    font-weight: thin;
+    font-style: italic;
+    font-display: swap;
+}
+
 body {
-    background-color: limegreen;
+    background-color: #FAFAFA;
+    font-family: 'NeueMontreal';
+    font-weight: normal;
+    margin: 0 auto;
+    color: #2A2A2A;
+}
+
+#hero-section {
+
+    background-color: #EEEEEE;
+    padding: 16px;
+
+    h1 {
+        font-family: 'Tobias';
+        font-weight: thin;
+        font-style: italic;
+        font-size: 2.5rem;
+        line-height: 1.2;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-family: 'NeueMontreal';
+        font-weight: bold;
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 30px;
+    }
+
+    p {
+        font-family: 'NeueMontreal';
+        font-weight: normal;
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 30px;
+    }
+}
+
+#hero-details {
+    display: none;
+}
+
+.section-header {
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.11);
+
+    .button {
+        display: inline-block;
+        text-decoration: none;
+        color: #2A2A2A;
+    }
+}
+
+#selectedWork-section {
+
+    background-color: #ffffff;
+    padding: 16px;
+
+    h2 {
+        font-family: 'NeueMontreal';
+        font-weight: normal;
+        display: inline-block;
+        font-size: 2rem;
+        line-height: 1.5;
+        margin-bottom: 30px;
+    }
+
+    p {
+        font-family: 'NeueMontreal';
+        font-weight: normal;
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 30px;
+    }
+
+    li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
 }
