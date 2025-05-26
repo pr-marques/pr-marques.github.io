@@ -64,12 +64,30 @@ body {
 
     a {
         color: #2A2A2A;
-        font-family: "PP Neue Montreal";
-        font-size: 1.25rem;
-        font-style: normal;
+        font-family: "NeueMontreal";
+        font-size: 1.125rem;
+        font-style: 100;
         font-weight: 500;
-        line-height: 150%; /* 1.875rem */
+        line-height: 150%;
         letter-spacing: -0.0125rem;
         text-decoration: none;
+    }
+}
+
+
+
+.section-header {
+    max-width: 100%;
+    padding: 32px 16px 0px 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.11);
+
+    .button {
+        display: inline-block;
+        text-decoration: none;
+        color: #2A2A2A;
     }
 }

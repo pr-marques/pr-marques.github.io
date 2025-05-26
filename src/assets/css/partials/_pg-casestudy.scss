@@ -1,22 +1,4 @@
-
-
-.section-header {
-    max-width: 100%;
-    padding: 32px 16px 0px 16px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.11);
-
-    .button {
-        display: inline-block;
-        text-decoration: none;
-        color: #2A2A2A;
-    }
-}
-
-#about-section {
+.caseStudy-section {
     padding-top: 64px;
     background-color: #FAFAFA;
     width: 100%;
@@ -51,24 +33,46 @@
     }
 }
 
-#about-content {
+.caseStudy-overview {
     display: flex;
-    padding: 0rem 1rem 3rem 1rem;
+    padding: 2rem 1rem 3rem 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4rem;
+    align-self: stretch;
+}
+
+.caseStudy-overview-details {
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
     align-self: stretch;
 }
 
-#about-picture {
+.caseStudy-overview-title {
     display: none;
 }
 
-#about-links {
+.caseStudy-overview-info {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: flex-start;
-    gap: 1rem;
+    gap: 0.75rem;
+    align-self: stretch;
 }
 
+.caseStudy-overview-infoline {
+    display: flex;
+    width: 100%;
+    height: 3.25rem;
+    padding: 0.75rem 0rem 0.5rem 0rem;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.11);
+}
+
+.caseStudy-overview-infoline.infolineLast{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.11);
+}
