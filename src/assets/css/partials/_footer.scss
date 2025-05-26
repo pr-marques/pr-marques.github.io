@@ -14,7 +14,7 @@ footer {
 
 #footer-content {
 
-    padding: 32px 16px;
+    padding: 32px 16px 16px 16px;
 
     ul {
         display: flex;
@@ -30,8 +30,8 @@ footer {
 
     li {
         list-style: none;
-
-
+        display: flex;
+        flex-direction: row;
     }
 
     a {
@@ -43,12 +43,16 @@ footer {
         font-weight: 500;
         line-height: 150%; /* 1.875rem */
     } 
+
+    .material-symbols-outlined {
+        bottom: -10px;
+    }
 }
 
 
 #footer-copyright {
 
-    padding: 0 16px 16px 16px;
+    padding: 0 0 16px 16px;
 
     p {
         color: #2A2A2A;

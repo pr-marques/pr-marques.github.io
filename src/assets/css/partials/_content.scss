@@ -10,3 +10,28 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+.primary-button {
+    
+    display: flex;
+    padding: 0.75rem 1.25rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+
+    border-radius: 1rem;
+    border: 1px solid #EDEDED;
+    background: #FFF;
+    box-shadow: 0px 0px 23.3px 0px rgba(0, 0, 0, 0.04);
+
+    a {
+        color: #2A2A2A;
+        font-family: "PP Neue Montreal";
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 1.875rem */
+        letter-spacing: -0.0125rem;
+        text-decoration: none;
+    }
+}
