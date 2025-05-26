@@ -1,4 +1,63 @@
 footer {
-    background-color: #EEEEEE;
-    border-top: 1px solid rgba(0, 0, 0, 0.11);
+
+    border-top: 1px solid rgba(22, 22, 22, 0.11);
+    background: #EEE;
+
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    align-self: stretch;
+
+}
+
+#footer-content {
+
+    padding: 32px 16px;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 24px;
+        align-self: stretch;
+        margin-block-end: 0px;
+        margin-block-start: 0px;
+        padding-inline-start: 0px;
+    }
+
+    li {
+        list-style: none;
+
+
+    }
+
+    a {
+        color: #000;
+        font-family: "NeueMontreal";
+        text-decoration: none;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 1.875rem */
+    } 
+}
+
+
+#footer-copyright {
+
+    padding: 0 16px 16px 16px;
+
+    p {
+        color: #2A2A2A;
+        font-family: "NeueMontreal";
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 1.3125rem */
+        letter-spacing: -0.00875rem;
+    } 
+
 }
