@@ -1,9 +1,13 @@
-header {
-
-    border-bottom: 1px solid rgba(0, 0, 0, 0.11);
-    background: linear-gradient(0deg, rgba(255, 227, 255, 0.01) 0%, rgba(255, 227, 255, 0.01) 100%), rgba(255, 255, 255, 0.75);
-    background-blend-mode: lighten, normal;
-    backdrop-filter: blur(100px);
+#main-header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    transform: translateY(0);
+    background-color: rgba(255, 255, 255, 0.0);
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s ease-in-out, transform 0.6s ease-in-out;
+    will-change: background-color, border-bottom, backdrop-filter, transform;
 
     width: 100%;
     height: 64px;
@@ -40,10 +44,16 @@ header {
     .nav-links {
         display: none;
     }
-
 }
 
-
+  #main-header.scrolled {
+    background-color: rgba(255, 255, 255, 1.0);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.11);
+  }
+  
+  #main-header.hidden {
+    transform: translateY(-100%);
+  }
   
 
 @media (min-width: 768px) {
@@ -62,106 +72,39 @@ header {
     }
 }
 
+
+
+/* hamburguer */
+
   
-#menu {
-    opacity: 0;
-    transform: scale(0.95);
-    width: 100%;
-    height: 100%;
-    color: #fff;
-    background: #000;
-    transition: opacity .2s, transform .2s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 0; // Ensure the menu is not hidden behind other elements
-    z-index: -1;
-    
-    &.-open {
-      // The opacity is increased to 0.9 when the menu is open to make it visible.
-      opacity: 0.9;
-      transform: scale(1);
-      z-index: 3;
-    }
-    
-    ul {
-      list-style: none;
-    }
-    
-    li {
-      margin: 20px 0;
-    }
+#hamburguer-container {
+    position: fixed;
+    top:20px;
+    right: 16px;
+    display: inline-block;
+    cursor: pointer;
   }
   
-  #menu-button {
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    box-sizing: border-box;
-    height: 32px;
-    cursor: pointer;
-    z-index: 5; // Increased to ensure it is above other elements
-    
-    svg {
-      stroke: #000;
-      transition: .2s;
-    }
-
-    .svg-first-child {
-      opacity: 1;
-      transition: opacity 0s .2s;
-
-      line {
-        transition: transform .2s;
-        transform: translateY(0px);
-      }
-    }
-
-    .svg-last-child {
-      opacity: 0;
-      transition: opacity 0s .2s;
-
-      line {
-        transition: transform .2s;
-        transform: rotate(0deg);
-        // Sets the point around which the rotation occurs, ensuring smooth rotation effects
-        transform-origin: center;
-      }
-    }
-
-    &#menu-open svg {
-      stroke: #fff;
-    }
-
-    &#menu-open .svg-first-child {
-      opacity: 0;
-
-      line {
-        transition: transform .2s;
-
-        &:first-child {
-          transform: translateY(7px);
-        }
-
-        &:last-child {
-          transform: translateY(-7px);
-        }
-      }
-    }
-
-    &#menu-open .svg-last-child {
-      opacity: 1;
-
-      line {
-        transition: transform .2s .2s;
-
-        &:first-child {
-          transform: rotate(45deg);
-        }
-
-        &:last-child {
-          transform: rotate(-45deg);
-        }
-      }
-    }
-      }  
+  .bar1, .bar3 {
+    width: 32px;
+    height: 1.5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .invis {
+    width: 32px;
+    height: 0px;
+    margin: 0px 0;
+  }
+  
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(0px, 6px);
+    transform: rotate(-45deg) translate(0px, 6px);
+  }
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(0px, -6px);
+    transform: rotate(45deg) translate(0px, -6px);
+  }

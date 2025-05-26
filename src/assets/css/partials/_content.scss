@@ -1,14 +1,52 @@
+
+/* -------------------------- CSS Reset --------------------------  */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.forSR {
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* -------------------------- appear animation --------------------------  */
+
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease-in-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* -------------------------- Variables -------------------------- */
+
+
+/* -------------------------- General -------------------------- */
+
+
 body {
     background-color: #FAFAFA;
     font-family: 'NeueMontreal';
     font-weight: normal;
     margin: 0 auto;
     color: #2A2A2A;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
 }
 
 .primary-button {
