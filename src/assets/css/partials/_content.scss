@@ -20,6 +20,8 @@ html {
     scroll-behavior: smooth;
 }
 
+@media (pointer:coarse){*:focus{outline:none}}
+
 
 /* -------------------------- Variables -------------------------- */
 
@@ -160,10 +162,10 @@ html {
     --space-xxs: 8px;
     --space-xs: 12px;
     --space-s: 16px;
-    --space-m: 24px;
-    --space-l: 32px;
-    --space-xl: 40px;
-    --space-xxl: 48px;
+    --space-m: 20px;
+    --space-l: 24px;
+    --space-xl: 32px;
+    --space-xxl: 40px;
     --space-xxxl: 64px;
     --space-huge: 80px;
 
