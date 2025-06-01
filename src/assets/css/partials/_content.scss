@@ -111,10 +111,9 @@ html {
 
     --clr-bg-pri: var(--neutral-02);
     --clr-bg-sec: var(--neutral-05);
-    --clr-bg-hero: radial-gradient(87.7% 67.58% at 36.85% 100%, rgba(255, 140, 0, 0.20) 0%, rgba(255, 255, 255, 0.00) 100%),
+    --clr-bg-gradient: radial-gradient(87.7% 67.58% at 36.85% 100%, rgba(255, 140, 0, 0.20) 0%, rgba(255, 255, 255, 0.00) 100%),
         radial-gradient(164.48% 79.58% at 8.96% 100%, rgba(255, 0, 255, 0.20) 0%, rgba(255, 255, 255, 0.00) 100%),
         linear-gradient(0deg, #EEE 0%, #EEE 100%), #F2F2F2;
-    --clr-bg-hero2: linear-gradient(-45deg, #EEE, #f38fb5, #EEE, #EEE);
 
 
     /* icons */
@@ -156,6 +155,7 @@ html {
     --type-xl: 1.5rem;
     --type-xxl: 2rem;
     --type-xxxl: 3rem;
+    --type-xxxxl: 4rem;
 
     /* spacing */
     --space-xxxs: 4px;
@@ -199,9 +199,9 @@ section {
 .section-header {
     width: 100%;
     margin: 0 auto;
-    padding: 32px 16px 0px 16px;
+    padding: 0 0 var(--space-s) 0;
 
-    border-bottom: 1px solid var(--clr-icon-hover);
+    border-bottom: 1px solid var(--clr-border-enabled);
 
 
     .section-header-container {
@@ -211,21 +211,17 @@ section {
         align-items: baseline;
     }
 
-    .button {
+    a {
         display: inline-block;
         text-decoration: none;
     }
-
-    h2 {
-        font-size: 2rem;
-    }   
 }
 
 .container {
     width: 100%;
     max-width: 1400px;
     margin: 0 auto;
-    padding: 0 var(--space-s);
+    padding: 0 var(--space-m);
 }
 
 
@@ -233,26 +229,43 @@ section {
 /* -------------------------- Typography -------------------------- */
 
 h1 {
-        font-family: 'Tobias', serif;
+        font-family: var(--font-display);
         font-weight: 100;
         font-style: italic;
-        font-size: 4rem;
+
+        font-size: var(--type-xxxxl);
         line-height: 1.2;
         letter-spacing: -0.025rem;
-        margin-bottom: 4rem;
 }
 
 h2 {
-        font-family: 'NeueMontreal', sans-serif;
         font-weight: 700;
-        max-width: 575px;
-        margin-bottom: 0px;
-        font-size: 1.125rem;
+
+        font-size: 2rem;
         line-height: 150%;
         letter-spacing: -0.025rem;
 }
 
+h3 {
+    font-weight: 700;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -0.03rem;
+}
 
+p {
+    font-weight: 300;
+
+    font-size: 1.125rem;
+    line-height: 150%;
+    letter-spacing: -0.025rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
 
 
@@ -289,11 +302,13 @@ h2 {
 
 .fade-in {
     opacity: 0;
+    filter: blur(4px);
     transform: translateY(20px);
-    transition: all 1s ease-in-out;
+    transition: all 1.5s ease-in-out;
 }
 
 .fade-in.visible {
     opacity: 1;
+    filter: blur(0px);
     transform: translateY(0);
 }
