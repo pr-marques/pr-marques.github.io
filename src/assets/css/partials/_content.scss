@@ -109,6 +109,9 @@ html {
 
     --clr-bg-pri: var(--neutral-02);
     --clr-bg-sec: var(--neutral-05);
+    --clr-bg-hero: radial-gradient(87.7% 67.58% at 36.85% 100%, rgba(255, 140, 0, 0.20) 0%, rgba(255, 255, 255, 0.00) 100%),
+        radial-gradient(164.48% 79.58% at 8.96% 100%, rgba(255, 0, 255, 0.20) 0%, rgba(255, 255, 255, 0.00) 100%),
+        linear-gradient(0deg, #EEE 0%, #EEE 100%), #F2F2F2;
 
     /* icons */
 
@@ -132,6 +135,7 @@ html {
 
     --clr-border-enabled: var(--neutral-10);
     --clr-border-subtle: var(--neutral-20);
+
 
 
     /* ---- other variables ---- */
@@ -188,115 +192,60 @@ section {
     background-color: var(--clr-bg-pri);
 }
 
-.container {
+.section-header {
     width: 100%;
-    max-width: 140px;
-    padding: 0 var(--space-l);
+    margin: 0 auto;
+    padding: 32px 16px 0px 16px;
+
+    border-bottom: 1px solid var(--clr-icon-hover);
+
+
+    .section-header-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    .button {
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }   
 }
 
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 var(--space-s);
+}
 
 
 
 /* -------------------------- Typography -------------------------- */
 
-
-//h1 {
-    font-family: var(--font-headings);
-    font-weight: 100;
+h1 {
+        font-family: 'Tobias', serif;
+        font-weight: 100;
+        font-style: italic;
+        font-size: 4rem;
+        line-height: 1.2;
+        letter-spacing: -0.025rem;
+        margin-bottom: 4rem;
 }
 
-
-//h2, h3, h4 {
-    font-family: var(--font-headings);
-    font-weight: 100;
-}
-
-//h1 {
-    font-size: var(--type-xxxl);
-    color: var(--clr-white);
-    text-transform: uppercase;
-}
-
-//h2 {
-    font-size: var(--type-xxl);
-    color: var(--clr-type-body);
-}
-
-//h3 {
-    font-size: var(--type-xl);
-    color: var(--clr-type-body);
-    text-transform: uppercase;
-}
-
-//h4 {
-    font-size: var(--type-l);
-    color: var(--clr-type-body);
-    text-transform: uppercase;
-}
-
-
-//p, a {
-    color: var(--clr-type-body);
-}
-
-//p {
-    font-weight: 100;
-    font-family: var(--font-body);
-    font-size: var(--type-m);
-}
-
-
-//a {
-    color: var(--clr-type-link-enabled);
-    text-decoration: none;
-    font-family: var(--font-headings);
-    font-size: var(--type-m);
-}
-
-//a:hover {
-    color: var(--clr-type-link-hover);
-}
-
-
-
-
-
-/* -------------------------- buttons -------------------------- */
-
-
-//button, .button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: var(--font-buttons);
-    color: var(--clr-white);
-
-    background-color: var(--clr-button-pri-enabled);
-    border: none;
-
-    border-radius: var(--radius-s);
-    padding: var(--space-xs) var(--space-s);
-
-    cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: all 0.25s ease-in-out; 
-}
-
-//button:hover {
-    transform: scale(1.025) translateY(-1px);
-    background-color: var(--clr-button-pri-hover);
-}
-
-//button:focus {
-    background-color: var(--clr-button-pri-focus);
-}
-
-//button:active {
-    background-color: var(--clr-button-pri-pressed);
-}
-
-//button:disabled {
-    background-color: var(--clr-button-pri-disabled);
+h2 {
+        font-family: 'NeueMontreal', sans-serif;
+        font-weight: 700;
+        max-width: 575px;
+        margin-bottom: 0px;
+        font-size: 1.125rem;
+        line-height: 150%;
+        letter-spacing: -0.025rem;
 }
 
 
@@ -330,41 +279,6 @@ section {
     }
 }
 
-
-
-.section-header {
-
-
-    margin: 0 auto;
-    color: #2A2A2A;
-    max-width: 100%;
-    padding: 32px 16px 0px 16px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.11);
-
-    .button {
-        display: inline-block;
-        text-decoration: none;
-        color: #2A2A2A;
-    }
-
-    h2 {
-    font-family: 'NeueMontreal';
-    font-weight: 700;
-    font-size: 2rem;
-    font-style: normal;
-    }   
-}
-
-
-
-
-
-
-!
 
 /* -------------------------- appear animation --------------------------  */
 

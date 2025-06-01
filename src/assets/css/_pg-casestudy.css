@@ -1,0 +1,112 @@
+.caseStudy-section {
+  padding-top: 64px;
+  background-color: #FAFAFA;
+  width: 100%;
+}
+.caseStudy-section h2 {
+  font-family: "NeueMontreal";
+  font-weight: normal;
+  display: inline-block;
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+.caseStudy-section p {
+  font-family: "NeueMontreal";
+  font-size: 1.125rem;
+  font-style: 100;
+  font-weight: 400;
+  line-height: 150%; /* 1.875rem */
+}
+.caseStudy-section figure {
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-end: 0;
+          margin-inline-end: 0;
+  -webkit-margin-start: 0;
+          margin-inline-start: 0;
+}
+.caseStudy-section img {
+  border-radius: 8px;
+}
+
+.caseStudy-overview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2rem 1rem 3rem 1rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 4rem;
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+}
+
+.caseStudy-overview-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 1rem;
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+}
+
+.caseStudy-overview-title {
+  display: none;
+}
+
+.caseStudy-overview-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 0.75rem;
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+}
+
+.caseStudy-overview-infoline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 3.25rem;
+  padding: 0.75rem 0rem 0.5rem 0rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.11);
+}
+
+.caseStudy-overview-infoline.infolineLast {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.11);
+}
