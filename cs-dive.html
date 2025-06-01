@@ -20,38 +20,68 @@
 <header id="main-header">
   <div class="container header-container">
 
-    <nav>
+    <nav id="main-nav">
       <a href="/index.html" class="logo">Mariana Campante</a>
-      <ul class="nav-links">
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/work.html">Work</a></li>
-        <li><a href="/">Resumé</a></li>
-        <li><a href="https://www.linkedin.com/in/mariana-campante-/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-      </ul>
-
-      <div id="hamburguer-container" onclick="myFunction(this)">
-        <div class="bar1"></div>
-        <div class="invis"></div>
-        <div class="bar3"></div>
+      <div id="main-nav-links">
+        <ul>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/work.html">Work</a></li>
+          <li><a href="/">Resumé</a></li>
+          <li><a href="https://www.linkedin.com/in/mariana-campante-/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        </ul>
       </div>
     </nav>
+    
+
+    <div class="hamburger" id="hamburger" onclick="myFunction(this);">
+      <div class="bar1"></div>
+      <div class="invis"></div>
+      <div class="bar3"></div>
+    </div>
 
     <div class="overlay" id="overlay">
-      <nav class="overlay-content">
-        <ul>
-          <ul>
-            <li><a href="#">Home →</a></li>
-            <li><a href="#">Work →</a></li>
-            <li><a href="#">About →</a></li>
-            <li><a href="#" target="_blank">LinkedIn ↗</a></li>
-            <li><a href="#" target="_blank">Resumé ↗</a></li>
-          </ul>
-        </ul>
-      </nav>
-    </div>
+                <nav class="overlay-content">
+                  <ul>
+                    <li><a href="#">Home →</a></li>
+                    <li><a href="#">Work →</a></li>
+                    <li><a href="#">About →</a></li>
+                    <li><a href="#" target="_blank">LinkedIn ↗</a></li>
+                    <li><a href="#" target="_blank">Resumé ↗</a></li>
+                  </ul>
+                </nav>
+            </div>
+
 
   </div>
 </header>
+
+   <script>
+        // Get elements
+        const hamburger = document.getElementById("hamburger");
+        const overlay = document.getElementById("overlay");
+
+        // Add click event to the hamburger menu
+        hamburger.addEventListener("click", () => {
+        // Toggle open class on both elements
+        hamburger.classList.toggle("open");
+        overlay.classList.toggle("open");
+
+        // Select all anchor links inside the overlay
+        const overlayLinks = overlay.querySelectorAll("a");
+
+        // Add click event to each anchor link
+        overlayLinks.forEach(link => {
+        link.addEventListener("click", () => {
+        // Close the menu and overlay
+        hamburger.classList.remove("open");
+        overlay.classList.remove("open");
+    });
+});
+
+});
+    </script>
+
+    
 
 
 <main>
