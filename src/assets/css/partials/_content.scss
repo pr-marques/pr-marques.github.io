@@ -20,22 +20,61 @@ html {
     scroll-behavior: smooth;
 }
 
-/* -------------------------- appear animation --------------------------  */
-
-
-.fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 1s ease-in-out;
-}
-
-.fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
 
 /* -------------------------- Variables -------------------------- */
+
+:root {
+
+    /* ---- color level 1 - primitives ---- */
+
+    --neutral-00: hsl(0, 0%, 100%);
+    --neutral-02: hsl(0, 0%, 98%);
+    --neutral-05: hsl(0, 0%, 95%);
+    --neutral-10: hsl(0, 0%, 90%);
+    --neutral-20: hsl(0, 0%, 80%);
+    --neutral-30: hsl(0, 0%, 70%);
+    --neutral-40: hsl(0, 0%, 60%);
+    --neutral-50: hsl(0, 0%, 50%);
+    --neutral-60: hsl(0, 0%, 40%);
+    --neutral-70: hsl(0, 0%, 30%);
+    --neutral-80: hsl(0, 0%, 20%);
+    --neutral-90: hsl(0, 0%, 10%);
+    --neutral-95: hsl(0, 0%, 5%);
+    --neutral-98: hsl(0, 0%, 2);
+    --neutral-100: hsl(0, 0%, 0%);
+
+    /* type family*/
+    --font-display: "Tobias", serif;
+    --font-body: "NeueMontreal", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+    /* font-size */
+    --type-xs: 0.75rem;
+    --type-s: 0.875rem;
+    --type-m: 1rem;
+    --type-l: 1.2em;
+    --type-xl: 1.5rem;
+    --type-xxl: 2rem;
+    --type-xxxl: 3rem;
+
+    /* spacing */
+    --space-xxxs: 4px;
+    --space-xxs: 8px;
+    --space-xs: 12px;
+    --space-s: 16px;
+    --space-m: 24px;
+    --space-l: 32px;
+    --space-xl: 40px;
+    --space-xxl: 48px;
+    --space-xxxl: 64px;
+    --space-huge: 80px;
+
+   /* border radius */
+   --radius-xs: 4px;
+   --radius-s: 8px;
+   --radius-m: 16px;
+   --radius-l: 32px;
+
+}
 
 
 /* -------------------------- General -------------------------- */
@@ -44,7 +83,6 @@ html {
 body {
     background-color: #FAFAFA;
     font-family: 'NeueMontreal';
-    font-weight: normal;
     margin: 0 auto;
     color: #2A2A2A;
 }
@@ -77,6 +115,10 @@ body {
 
 
 .section-header {
+
+
+    margin: 0 auto;
+    color: #2A2A2A;
     max-width: 100%;
     padding: 32px 16px 0px 16px;
     display: flex;
@@ -90,4 +132,26 @@ body {
         text-decoration: none;
         color: #2A2A2A;
     }
+
+    h2 {
+    font-family: 'NeueMontreal';
+    font-weight: 700;
+    font-size: 2rem;
+    font-style: normal;
+    }   
+}
+
+
+/* -------------------------- appear animation --------------------------  */
+
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease-in-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
