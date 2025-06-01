@@ -1,3 +1,5 @@
+/*------------------------------------------ Desktop Navigation ------------------------------------- */
+
 #main-header {
     top: 0;
     left: 0;
@@ -17,7 +19,7 @@
     align-items: center;
     align-self: stretch;
 
-    nav {
+    #main-nav {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -117,35 +119,50 @@
 
     background-color: var(--clr-bg-pri);
     display: none;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     z-index: 1000;
-    transition: all .3s ease-in-out;
   }
-  
-  .overlay-content ul {
+
+  .overlay-content {
+    width: 100%;
+    margin-top: 20vh;
     display: flex;
     flex-direction: column;
-    align-items: start;
+    gap: var(--space-m);
 
+    ul {
+      width: 100%;
 
-    list-style: none;
-    padding: 0;
-  }
-  
-  .overlay-content ul li {
-    margin: 20px 0;
-  }
-  
-  .overlay-content ul li a {
-    color: var(--clr-type-link-enabled);
-    font-size: 1.5rem;
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-  
-  .overlay-content ul li a:hover {
-    color: var(--neutral);
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      list-style: none;
+      gap: var(--space-xs);
+
+      padding: 0;
+    }
+
+    li {
+      width: 100%;
+      height: auto;
+      padding: 0 0;
+      margin: 0 auto;
+    }
+
+    a {
+      font-size: 1.5rem;
+      padding: 0 0;
+      margin: 0 auto;
+    }
+
+    .overlay-item {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: var(--space-s) 0;
+    }
+
   }
   
   /* Overlay Open State */
