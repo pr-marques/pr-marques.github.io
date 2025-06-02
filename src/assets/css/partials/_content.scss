@@ -150,8 +150,8 @@ html {
     /* font-size */
     --type-xs: 0.75rem;
     --type-s: 0.875rem;
-    --type-m: 1rem;
-    --type-l: 1.2em;
+    --type-m: 1.125rem;
+    --type-l: 1.25em;
     --type-xl: 1.5rem;
     --type-xxl: 2rem;
     --type-xxxl: 3rem;
@@ -192,7 +192,7 @@ body {
 section {
     width: 100%;
     margin: 0 auto;
-    padding: var(--space-xxxl) 0;
+    padding: var(--space-l) 0 0 0;
     background-color: var(--clr-bg-pri);
 }
 
@@ -229,27 +229,27 @@ section {
 /* -------------------------- Typography -------------------------- */
 
 h1 {
-        font-family: var(--font-display);
-        font-weight: 100;
-        font-style: italic;
+    font-family: var(--font-display);
+    font-weight: 100;
+    font-style: italic;
 
-        font-size: var(--type-xxxxl);
-        line-height: 1.2;
-        letter-spacing: -0.025rem;
+    font-size: var(--type-xxxxl);
+    line-height: 1.2;
+    letter-spacing: -0.025rem;
 }
 
 h2 {
-        font-weight: 700;
+    font-weight: 700;
 
-        font-size: 2rem;
-        line-height: 150%;
-        letter-spacing: -0.025rem;
+    font-size: var(--type-xxl);
+    line-height: 150%;
+    letter-spacing: -0.025rem;
 }
 
 h3 {
     font-weight: 700;
-    font-style: normal;
-    font-weight: 500;
+
+    font-size: var(--type-l);
     line-height: 150%;
     letter-spacing: -0.03rem;
 }
@@ -257,7 +257,7 @@ h3 {
 p {
     font-weight: 300;
 
-    font-size: 1.125rem;
+    font-size: var(--type-m);
     line-height: 150%;
     letter-spacing: -0.025rem;
 }
@@ -265,6 +265,12 @@ p {
 a {
     text-decoration: none;
     color: inherit;
+
+    font-weight: 500;
+
+    font-size: var(--type-m);
+    line-height: 130%;
+    letter-spacing: -0.025rem;
 }
 
 
