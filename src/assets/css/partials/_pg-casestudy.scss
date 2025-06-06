@@ -1,4 +1,5 @@
-.caseStudy-section {
+.caseStudy-section,
+.caseStudy-content-section {
     margin-top: var(--space-xxxl);
     width: 100%;
 
@@ -50,8 +51,6 @@
 
 }
 
-
-
 .caseStudy-overview-info {
     display: flex;
     flex-direction: column;
@@ -78,15 +77,34 @@
     }
 }
 
-.caseStudy-content {
-    display: flex;
-    margin-top: 3rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    align-self: stretch;
 
+
+.caseStudy-content-section {
+    background: linear-gradient(180deg, rgba(2, 30, 191, 0.00) 0%, rgba(36, 36, 36, 0.98) 15.21%), #FAFAFA;
+
+    .caseStudy-content {
+        display: flex;
+        margin-top: 3rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        align-self: stretch;
+
+        .caseStudy-content-image {
+            margin: 0;
+            margin-block-end: 0;
+            margin-block-start: 0;
+            margin-inline-end: 0;
+            margin-inline-start: 0;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
 }
+    
+
 
 
 

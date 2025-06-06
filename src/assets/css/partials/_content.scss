@@ -12,6 +12,13 @@ img {
     height: auto;
 }
 
+figure {
+    margin-block-end: 0;
+    margin-block-start: 0;
+    margin-inline-end: 0;
+    margin-inline-start: 0;
+}
+
 .forSR {
     display: none;
 }
