@@ -295,26 +295,26 @@ a {
 
 
 
-
+/* -------------------------- buttons --------------------------  */
 
 
 .primary-button {
 
-    display: flex;
     width: 100%;
+    display: flex;
+
     cursor: pointer;
     padding: 0.85rem 1.25rem;
     justify-content: center;
     align-items: center;
     gap: 0.625rem;
 
-    border-radius: 1rem;
+    border-radius: var(--radius-m);
     border: 1px solid var(--clr-border-enabled);
-    outline: 0px solid rgba(255, 118, 230, 0.00);
-    background: #FFF;
+    outline: 0px solid var(--clr-border-enabled);
+    background: var(--clr-button-pri-enabled);
     box-shadow: 0px 0px 23.3px 0px rgba(0, 0, 0, 0.04);
 
-    font-weight: 100;
     font-size: var(--type-m);
     line-height: 130%;
     letter-spacing: -0.025rem;
@@ -345,7 +345,7 @@ a {
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
 
     a:hover,
     a:focus {

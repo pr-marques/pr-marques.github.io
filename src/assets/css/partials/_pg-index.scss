@@ -1,8 +1,8 @@
 #hero-section {
     position: sticky;
-    top: 0;
     display: flex;
     align-items: end;
+    top: 0;
     z-index: -10;
 
     background: var(--clr-bg-gradient);
@@ -20,11 +20,7 @@
     }
 
     h2 {
-        font-weight: 700;
-
-        font-size: 1.125rem;
-        line-height: 150%;
-        letter-spacing: -0.025rem;
+        font-size: var(--type-l);
     }
 
 
@@ -45,8 +41,7 @@
         width: 100%;
         list-style: none;
         margin: 0;
-        padding: 0 0;
-        width: 100%;
+        padding: 0;
         border-bottom: 1px solid var(--clr-border-enabled);
         background-color: var(--clr-bg-pri);
         transition: all 0.2s ease-in-out;
@@ -108,7 +103,6 @@
                         line-height: 150%;
                         font-weight: 500;
                         letter-spacing: 0.0125rem;
-                        text-transform: camel-case;
                     }
                 }
 
