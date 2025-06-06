@@ -1,0 +1,42 @@
+/* -------------------------- back to top button --------------------------  */
+
+
+#back-to-top-container {
+    position: fixed;
+    bottom: var(--space-l);
+    right: var(--space-l);
+    border: none;
+    outline: none;
+    background-color: var(--clr-bg-sec);
+    color: white;
+    cursor: pointer;
+    pointer-events: none;
+    border-radius: 100%;
+    
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.6s ease-in-out;
+
+    button {
+        padding: 0;
+        box-shadow: none;
+        border: none;;
+        background-color: transparent;
+        padding: var(--space-s);
+        transition: all 0.15s ease-in-out; 
+    }
+}
+
+
+#back-to-top-container button:hover {
+    transform: translateY(-3px);
+}
+
+#back-to-top-container.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#back-to-top-container:hover {
+    background-color: var(--clr-bg-pri);
+}
