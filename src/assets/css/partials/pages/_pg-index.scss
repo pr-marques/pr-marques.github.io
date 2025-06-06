@@ -5,8 +5,8 @@
     top: 0;
     z-index: -10;
 
-    background: var(--clr-bg-gradient);
-    padding: var(--space-xxxl) var(--space-xs);
+    background: $clr-bg-gradient;
+    padding: $space-xxxl $space-xs;
     height: 100svh;
 
     .hero-container {
@@ -20,7 +20,7 @@
     }
 
     h2 {
-        font-size: var(--type-l);
+        font-size: $type-l;
     }
 
 
@@ -42,14 +42,14 @@
         list-style: none;
         margin: 0;
         padding: 0;
-        border-bottom: 1px solid var(--clr-border-enabled);
-        background-color: var(--clr-bg-pri);
+        border-bottom: 1px solid $clr-border-enabled;
+        background-color: $clr-bg-pri;
         transition: all 0.2s ease-in-out;
 
         a,
         a:hover,
         a:focus {
-            color: var(clr-type-link-enabled);
+            color: $clr-type-link-enabled;
             width: 100%;
         }
     }
@@ -62,7 +62,7 @@
     }
 
     img {
-        border-radius: var(--radius-s);
+        border-radius: $radius-s;
     }
 
     .project-thumbnail {
@@ -70,10 +70,10 @@
         flex-direction: column-reverse;
         justify-content: center;
         align-items: start;
-        gap: var(--space-s);
+        gap: $space-s;
 
         width: 100%;
-        padding: var(--space-xl) var(--space-m);
+        padding: $space-xl $space-m;
 
 
         .project-content {
@@ -81,7 +81,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: start;
-            gap: var(--space-l);
+            gap: $space-l;
 
             .project-details {
                 display: flex;
@@ -93,13 +93,13 @@
                 .project-tags {
                     display: flex;
                     flex-wrap: wrap;
-                    gap: var(--space-xxs);
+                    gap: $space-xxs;
 
                     .tag {
-                        padding: var(--space-xxs) var(--space-xs);
-                        background-color: var(--clr-bg-sec);
-                        border-radius: var(--radius-s);
-                        font-size: var(--type-xs);
+                        padding: $space-xxs $space-xs;
+                        background-color: $clr-bg-sec;
+                        border-radius: $radius-s;
+                        font-size: $type-xs;
                         line-height: 150%;
                         font-weight: 500;
                         letter-spacing: 0.0125rem;
@@ -141,8 +141,8 @@
     top: 50%;
     transform: translateY(-50%);
 
-    width: 40px;
-    height: 40px;
+    width: $space-xxl;
+    height: $space-xxl;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -164,11 +164,11 @@
 }
 
 .next {
-  right: var(--space-s);
+  right: $space-s;
 }
 
 .prev {
-  left: var(--space-s);
+  left: $space-s;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -191,10 +191,10 @@
     #work-section {
         ul {
                 li:hover {
-                    background-color: var(--clr-bg-hover);
+                    background-color: $clr-bg-hover;
 
                     a {
-                        color: var(--clr-type-body);
+                        color: $clr-type-body;
                     }
 
                     .prev, .next {
@@ -209,7 +209,7 @@
                     grid-template-columns: 4fr 6fr;
                     grid-template-rows: 1fr;
                     align-items: center;
-                    gap: 20px;
+                    gap: $space-m;
                     }
 
                     .project-content {
@@ -222,7 +222,7 @@
                             flex-direction: column-reverse;
 
                             h3 {
-                                font-size: var(--type-xl);
+                                font-size: $type-xl;
                                 line-height: 150%;
                                 letter-spacing: -0.03rem;
                             }

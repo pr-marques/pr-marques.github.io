@@ -1,6 +1,6 @@
 .caseStudy-section,
 .caseStudy-content-section {
-    margin-top: var(--space-xxxl);
+    margin-top: $space-xxxl;
     width: 100%;
 
     figure {
@@ -11,17 +11,17 @@
     }
 
     img {
-        border-radius: var(--radius-s);
+        border-radius: $radius-s;
     }
 }
 
 .caseStudy-overview {
 
     display: flex;
-    padding: 2rem 1rem 3rem 1rem;
+    padding: $space-xl $space-s $space-xxl $space-s;
     flex-direction: column-reverse;
     align-items: flex-start;
-    gap: 4rem;
+    gap: $space-xxxl;
     align-self: stretch;
 
 }
@@ -38,7 +38,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 1rem;
+    gap: $space-s;
     align-self: stretch;
 
 }
@@ -50,18 +50,18 @@
     align-self: stretch;
 
     :first-of-type {
-        border-top: 1px solid var(--clr-border-enabled);
+        border-top: 1px solid $clr-border-enabled;
     }
 
     .caseStudy-overview-infoline {
         display: flex;
         width: 100%;
         height: 3.25rem;
-        padding: var(--space-xl) 0;
+        padding: $space-xl 0;
         justify-content: space-between;
         align-items: center;
         align-self: stretch;
-        border-bottom: 1px solid var(--clr-border-enabled);
+        border-bottom: 1px solid $clr-border-enabled;
 
         :first-of-type {
             border-top: none;
@@ -72,11 +72,11 @@
 
 
 .caseStudy-content-section {
-    background: linear-gradient(180deg, rgba(2, 30, 191, 0.00) 0%, rgba(36, 36, 36, 0.98) 15.21%), #FAFAFA;
+    background: linear-gradient(180deg, rgba(2, 30, 191, 0.00) 0%, rgba(36, 36, 36, 0.98) 10%), #FAFAFA;
 
     .caseStudy-content {
         display: flex;
-        margin-top: 3rem;
+        margin-top: $space-xxl;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
@@ -106,7 +106,7 @@
         grid-template-columns: 4fr 6fr;
         grid-template-rows: 1fr;
         align-items: center;
-        gap: 20px;
+        gap: $space-m;
 
         .caseStudy-overview-aside {
             height: 100%;
@@ -116,7 +116,6 @@
 
             .caseStudy-overview-title {
                 display: inline-block;
-                font-weight: 900;
             }
         }
     }

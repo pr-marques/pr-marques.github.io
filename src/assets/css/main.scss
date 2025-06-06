@@ -1,16 +1,22 @@
 @charset "utf-8";
 
+// Importing all partials for the main stylesheet
+
 @import
-    "partials/content",
-    "partials/fonts",
-    "partials/mediaqueries",
 
-    "partials/header",
-    "partials/footer",
-    "partials/back-to-top",
+// General
+"partials/variables",
+"partials/global",
+"partials/fonts",
+"partials/mediaqueries",
 
+// Components
+"partials/components/header",
+"partials/components/footer",
+"partials/components/back-to-top",
 
-    "partials/pg-work",
-    "partials/pg-about",
-    "partials/pg-index",
-    "partials/pg-casestudy";
+// Pages
+"partials/pages/pg-index",
+"partials/pages/pg-work",
+"partials/pages/pg-casestudy",
+"partials/pages/pg-about";

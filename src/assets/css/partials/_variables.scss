@@ -1,0 +1,161 @@
+/* -------------------------- Variables -------------------------- */
+
+:root {
+
+
+    /* ---- color level 0 - primitives ---- */
+
+    $neutral-00: hsl(0, 0%, 100%);
+    $neutral-02: hsl(0, 0%, 98%);
+    $neutral-03: hsl(0, 0%, 96%);
+    $neutral-05: hsl(0, 0%, 93%);
+    $neutral-10: hsl(0, 0%, 90%);
+    $neutral-20: hsl(0, 0%, 80%);
+    $neutral-30: hsl(0, 0%, 70%);
+    $neutral-40: hsl(0, 0%, 60%);
+    $neutral-50: hsl(0, 0%, 50%);
+    $neutral-60: hsl(0, 0%, 40%);
+    $neutral-70: hsl(0, 0%, 30%);
+    $neutral-80: hsl(0, 0%, 20%);
+    $neutral-85: hsl(0, 0%, 16%);
+    $neutral-90: hsl(0, 0%, 10%);
+    $neutral-100: hsl(0, 0%, 0%);
+
+    $pink-10: hsl(311, 100%, 90%);
+    $pink-20: hsl(311, 100%, 80%);
+    $pink-30: hsl(311, 100%, 70%);
+    $pink-40: hsl(311, 100%, 60%);
+    $pink-50: hsl(311, 100%, 50%);
+    $pink-60: hsl(311, 100%, 40%);
+    $pink-70: hsl(311, 100%, 30%);
+    $pink-80: hsl(311, 100%, 20%);
+    $pink-90: hsl(311, 100%, 10%);
+
+
+
+    /* ---- color level 1 - semantic ---- */
+
+    $primary-00: $neutral-00;
+    $primary-02: $neutral-02;
+    $primary-03: $neutral-03;
+    $primary-05: $neutral-05;
+    $primary-10: $neutral-10;
+    $primary-20: $neutral-20;
+    $primary-30: $neutral-30;
+    $primary-40: $neutral-40;
+    $primary-50: $neutral-50;
+    $primary-60: $neutral-60;
+    $primary-70: $neutral-70;
+    $primary-80: $neutral-80;
+    $primary-85: $neutral-85;
+    $primary-90: $neutral-85;
+    $primary-100: $neutral-100;
+
+
+    $accent-10: $pink-10;
+    $accent-20: $pink-20;
+    $accent-30: $pink-30;
+    $accent-40: $pink-40;
+    $accent-50: $pink-50;
+    $accent-60: $pink-60;
+    $accent-70: $pink-70;
+    $accent-80: $pink-80;
+    $accent-90: $pink-90;
+
+
+
+    /* ---- color level 2 - system ---- */
+
+    // type / body
+
+    $clr-type-body: $primary-85;
+    $clr-type-body-disabled: $primary-50;
+
+    $clr-type-body-inv: $primary-05;
+    $clr-type-body-disabled-inv: $primary-50;
+
+
+    // type / links
+
+    $clr-type-link-enabled: $primary-85;
+    $clr-type-link-hover: $accent-60;
+    $clr-type-link-focus: $accent-60;
+    $clr-type-link-pressed: $accent-70;
+    $clr-type-link-disabled: $primary-50;
+
+    $clr-type-link-inverted: $primary-05;
+
+    // surfaces
+
+    $clr-bg-pri: $primary-02;
+    $clr-bg-sec: $primary-05;
+    $clr-bg-hover: $primary-03;
+    $clr-bg-gradient: radial-gradient(87.7% 67.58% at 36.85% 100%, rgba(255, 140, 0, 0.20) 0%, rgba(255, 255, 255, 0.00) 100%),
+        radial-gradient(164.48% 79.58% at 8.96% 100%, rgba(255, 0, 255, 0.20) 0%, rgba(255, 255, 255, 0.00) 100%),
+        linear-gradient(0deg, #EEE 0%, #EEE 100%), #F2F2F2;
+
+
+    // icons
+
+    $clr-icon-enabled: $neutral-85;
+    $clr-icon-hover: $accent-60;
+    $clr-icon-focus: $accent-60;
+    $clr-icon-pressed: $accent-70;
+    $clr-icon-disabled: $neutral-50;
+
+    $clr-icon-inverted: $neutral-05;
+
+    // buttons
+
+    $clr-button-pri-enabled: $neutral-00;
+    $clr-button-pri-hover: $neutral-10;
+    $clr-button-pri-focus: $neutral-10;
+    $clr-button-pri-pressed: $neutral-20;
+    $clr-button-pri-disabled: $neutral-00;
+
+    // borders
+
+    $clr-border-enabled: $neutral-10;
+    $clr-border-subtle: $neutral-20;
+
+
+
+    /* ---- other variables ---- */
+
+    // type family
+
+    $font-display: "Tobias", "Times New Roman", Times, serif;
+    $font-body: "NeueMontreal", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+    // font-size
+
+    $type-xs: 0.75rem;
+    $type-s: 0.875rem;
+    $type-m: 1.125rem;
+    $type-l: 1.25em;
+    $type-xl: 1.5rem;
+    $type-xxl: 2rem;
+    $type-xxxl: 3rem;
+    $type-xxxxl: 4rem;
+
+    // spacing
+
+    $space-xxxs: 4px;
+    $space-xxs: 8px;
+    $space-xs: 12px;
+    $space-s: 16px;
+    $space-m: 20px;
+    $space-l: 24px;
+    $space-xl: 32px;
+    $space-xxl: 40px;
+    $space-xxxl: 64px;
+    $space-huge: 80px;
+
+    // border radius
+
+    $radius-s: 8px;
+    $radius-m: 16px;
+    $radius-l: 32px;
+    $radius-full: 1000px;
+
+}

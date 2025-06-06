@@ -1,0 +1,35 @@
+#back-to-top-container {
+    position: fixed;
+    bottom: $space-l;
+    right: $space-l;
+    border: none;
+    background-color: $clr-bg-sec;
+    cursor: pointer;
+    border-radius: 100%;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.6s ease-in-out;
+
+    :hover {
+        background-color: $clr-bg-pri;
+    }
+
+    button {
+        padding: 0;
+        box-shadow: none;
+        border: none;
+        background-color: transparent;
+        padding: $space-s;
+        transition: all 0.15s ease-in-out;
+
+        :hover {
+            transform: translateY(-3px);
+        }
+    }
+}
+
+#back-to-top-container.show {
+    opacity: 1;
+    pointer-events: auto;
+}
