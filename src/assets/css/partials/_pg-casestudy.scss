@@ -1,23 +1,12 @@
 .caseStudy-section {
-    padding-top: 64px;
-    background-color: #FAFAFA;
+    margin-top: var(--space-xxxl);
     width: 100%;
 
-    h2 {
-        font-family: 'NeueMontreal';
-        font-weight: normal;
-        display: inline-block;
-        font-size: 2rem;
-        line-height: 1.5;
-        margin-bottom: 30px;
-    }
-    
     p {
-        font-family: 'NeueMontreal';
         font-size: 1.125rem;
         font-style: 100;
         font-weight: 400;
-        line-height: 150%; /* 1.875rem */
+        line-height: 150%;
 
     }
 
@@ -29,50 +18,101 @@
     }
 
     img {
-        border-radius: 8px;
+        border-radius: var(--radius-s);
     }
 }
 
 .caseStudy-overview {
+
     display: flex;
     padding: 2rem 1rem 3rem 1rem;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: flex-start;
     gap: 4rem;
     align-self: stretch;
+
+}
+
+.caseStudy-overview-aside {
+    .caseStudy-overview-title {
+        display: none;
+    }
+
 }
 
 .caseStudy-overview-details {
+
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
     align-self: stretch;
+
 }
 
-.caseStudy-overview-title {
-    display: none;
-}
+
 
 .caseStudy-overview-info {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 0.75rem;
-    align-self: stretch;
-}
-
-.caseStudy-overview-infoline {
-    display: flex;
-    width: 100%;
-    height: 3.25rem;
-    padding: 0.75rem 0rem 0.5rem 0rem;
-    justify-content: space-between;
     align-items: center;
     align-self: stretch;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.11);
+
+    :first-of-type {
+        border-top: 1px solid var(--clr-border-enabled);
+    }
+
+    .caseStudy-overview-infoline {
+        display: flex;
+        width: 100%;
+        height: 3.25rem;
+        padding: var(--space-xl) 0;
+        justify-content: space-between;
+        align-items: center;
+        align-self: stretch;
+        border-bottom: 1px solid var(--clr-border-enabled);
+
+        :first-of-type {
+            border-top: none;
+        }
+    }
 }
 
-.caseStudy-overview-infoline.infolineLast{
-    border-bottom: 1px solid rgba(0, 0, 0, 0.11);
+.caseStudy-content {
+    display: flex;
+    margin-top: 3rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: stretch;
+
+}
+
+
+
+
+@media (min-width: 900px) {
+
+
+
+    .caseStudy-overview {
+        display: grid;
+        grid-template-columns: 4fr 6fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+        gap: 20px;
+
+        .caseStudy-overview-aside {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+                .caseStudy-overview-title {
+                    display: inline-block;
+                    font-weight: 900;
+                }
+        }
+    }
+
 }
