@@ -135,7 +135,8 @@
 
 .mySlides,
 .mySlides1,
-.mySlides2 {
+.mySlides2,
+.mySlides3 {
   display: none;
 }
 
@@ -144,7 +145,7 @@
     pointer-events: auto;
     cursor: pointer;
     top: 50%;
-    transform: translateY(-50%); // vertical centering
+    transform: translateY(-50%);
 
     width: 40px;
     height: 40px;
@@ -155,8 +156,8 @@
     border-radius: 1000px;
     box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.16); 
     user-select: none;
-    backdrop-filter: blur(4px); // add this line
-    -webkit-backdrop-filter: blur(4px); // for Safari support
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
 
     background-color: rgba(0, 0, 0, 0.7);
     transition: all 0.3s ease;
@@ -192,7 +193,8 @@
         display: none;
     }
 
-    #selectedWork-section {
+    #selectedWork-section,
+    #work-section {
         ul {
                 li:hover {
                     background-color: var(--clr-bg-hover);
