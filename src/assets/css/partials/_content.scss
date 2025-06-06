@@ -1,4 +1,3 @@
-
 /* -------------------------- CSS Reset --------------------------  */
 
 *,
@@ -27,7 +26,11 @@ html {
     scroll-behavior: smooth;
 }
 
-@media (pointer:coarse){*:focus{outline:none}}
+@media (pointer:coarse) {
+    *:focus {
+        outline: none
+    }
+}
 
 
 /* -------------------------- Variables -------------------------- */
@@ -82,7 +85,7 @@ html {
     --primary-85: var(--neutral-85);
     --primary-90: var(--neutral-85);
     --primary-100: var(--neutral-100);
-    
+
 
     --accent-10: var(--pink-10);
     --accent-20: var(--pink-20);
@@ -180,11 +183,11 @@ html {
     --space-xxxl: 64px;
     --space-huge: 80px;
 
-   /* border radius */
-   --radius-s: 8px;
-   --radius-m: 16px;
-   --radius-l: 32px;
-   --radius-full: 1000px;
+    /* border radius */
+    --radius-s: 8px;
+    --radius-m: 16px;
+    --radius-l: 32px;
+    --radius-full: 1000px;
 
 }
 
@@ -198,7 +201,7 @@ body {
     min-height: 100dvh;
     display: flex;
     flex-direction: column;
-    
+
     background-color: var(--clr-bg-pri);
 
     font-family: var(--font-body);
@@ -296,7 +299,7 @@ a {
 
 
 .primary-button {
-    
+
     display: flex;
     width: 100%;
     cursor: pointer;
@@ -317,6 +320,11 @@ a {
     letter-spacing: -0.025rem;
 
     transition: all 0.1s ease-in-out;
+}
+
+.button-text,
+.button-text:hover {
+    color: var(clr-type-link-enabled);
 }
 
 
@@ -352,6 +360,11 @@ a {
             border: 1px solid rgba(255, 118, 230, 0.65);
             outline: 4px solid rgba(255, 118, 230, 0.40);
             box-sizing: border-box;
+        }
+
+        a:hover,
+        a:focus {
+            color: var(--clr-type-link-enabled);
         }
     }
 }
