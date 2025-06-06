@@ -33,13 +33,9 @@
     ul {
       list-style: none;
       display: flex;
-      gap: var(--space-xs);
+      gap: var(--space-xl);
       padding: 0;
       margin: 0;
-
-      li {
-        margin-right: 15px; // Adjust spacing as needed
-      }
     }
 
     a {
@@ -76,7 +72,7 @@
 .hamburger {
   position: fixed;
   top: var(--space-m);
-  right: var(--space-xl);
+  right: var(--space-l);
   display: inline-block;
   z-index: 1001;
 
@@ -159,7 +155,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: var(--space-s) var(--space-xs) var(--space-s) 0;
+    padding: var(--space-s) var(--space-xxs) var(--space-s) 0;
   }
 
 }
