@@ -133,16 +133,18 @@
   pointer-events: none;
 }
 
-.mySlides {
+.mySlides,
+.mySlides1,
+.mySlides2 {
   display: none;
 }
 
-/* Next & previous buttons */
 .prev, .next {
     position: absolute;
     pointer-events: auto;
     cursor: pointer;
     top: 50%;
+    transform: translateY(-50%); // vertical centering
 
     width: 40px;
     height: 40px;
@@ -153,10 +155,12 @@
     border-radius: 1000px;
     box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.16); 
     user-select: none;
+    backdrop-filter: blur(4px); // add this line
+    -webkit-backdrop-filter: blur(4px); // for Safari support
 
-    background-color: rgba(0,0,0,1);
+    background-color: rgba(0, 0, 0, 0.7);
     transition: all 0.3s ease;
-    z-index: 1000;
+    z-index: 1;
 
  a {
     margin: 0 auto;
@@ -164,13 +168,12 @@
   }
 }
 
-/* Position the "next button" to the right */
 .next {
-  right: 8px;
+  right: var(--space-s);
 }
 
 .prev {
-  left: 8px;
+  left: var(--space-s);
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -185,6 +188,10 @@
 
 @media (min-width: 900px) {
 
+    .prev, .next {
+        display: none;
+    }
+
     #selectedWork-section {
         ul {
                 li:hover {
@@ -193,6 +200,12 @@
                     a {
                         color: var(--clr-type-body);
                     }
+
+                    .prev, .next {
+                        display: flex;
+                    }
+
+                    
                 }
 
                 .project-thumbnail {
