@@ -1,9 +1,6 @@
 /* -------------------------- Variables -------------------------- */
 
-:root {
-
-
-    /* ---- color level 0 - primitives ---- */
+ /* ---- color level 0 - primitives ---- */
 
     $neutral-00: hsl(0, 0%, 100%);
     $neutral-02: hsl(0, 0%, 98%);
@@ -90,9 +87,6 @@
     $clr-bg-pri: $primary-02;
     $clr-bg-sec: $primary-05;
     $clr-bg-hover: $primary-03;
-    $clr-bg-gradient: radial-gradient(87.7% 67.58% at 36.85% 100%, rgba(255, 140, 0, 0.20) 0%, rgba(255, 255, 255, 0.00) 100%),
-        radial-gradient(164.48% 79.58% at 8.96% 100%, rgba(255, 0, 255, 0.20) 0%, rgba(255, 255, 255, 0.00) 100%),
-        linear-gradient(0deg, #EEE 0%, #EEE 100%), #F2F2F2;
 
 
     // icons
@@ -132,7 +126,7 @@
     $type-xs: 0.75rem;
     $type-s: 0.875rem;
     $type-m: 1.125rem;
-    $type-l: 1.25em;
+    $type-l: 1.25rem;
     $type-xl: 1.5rem;
     $type-xxl: 2rem;
     $type-xxxl: 3rem;
@@ -157,5 +151,3 @@
     $radius-m: 16px;
     $radius-l: 32px;
     $radius-full: 1000px;
-
-}

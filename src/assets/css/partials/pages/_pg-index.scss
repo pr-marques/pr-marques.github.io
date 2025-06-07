@@ -1,3 +1,5 @@
+/* -------------------------- Hero Section --------------------------  */
+
 #hero-section {
     position: sticky;
     display: flex;
@@ -5,7 +7,9 @@
     top: 0;
     z-index: -10;
 
-    background: $clr-bg-gradient;
+    background: radial-gradient(87.7% 67.58% at 36.85% 100%, rgba(255, 140, 0, 0.20) 0%, rgba(255, 255, 255, 0.00) 100%),
+        radial-gradient(164.48% 79.58% at 8.96% 100%, rgba(255, 0, 255, 0.20) 0%, rgba(255, 255, 255, 0.00) 100%),
+        linear-gradient(0deg, #EEE 0%, #EEE 100%), #F2F2F2;
     padding: $space-xxxl $space-xs;
     height: 100svh;
 
@@ -25,6 +29,43 @@
 
 
 }
+
+/* -------------------------- Green Pulse --------------------------  */
+
+#hero-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: $space-s;
+}
+
+.green {
+    background: #66FF99;
+}
+
+.circle {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 1px 1px #66FF99;
+}
+
+.pulse {
+    animation: pulse-animation 2s infinite;
+}
+
+@keyframes pulse-animation {
+    0% {
+        box-shadow: 0 0 0 0px rgba(16, 119, 8, 0.2);
+    }
+
+    100% {
+        box-shadow: 0 0 0 20px rgba(16, 119, 8, 0);
+    }
+}
+
+
+/* -------------------------- (Selected) Work Section --------------------------  */
 
 #selectedWork-section,
 #work-section {
@@ -118,22 +159,23 @@
 /* -------------------------- Slideshow --------------------------  */
 
 .slideshow-container {
-  max-width: 1000px;
-  width: 100%;
-  height: auto;
-  position: relative;
-  margin: auto;
-  pointer-events: none;
+    max-width: 1000px;
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin: auto;
+    pointer-events: none;
 }
 
 .mySlides,
 .mySlides1,
 .mySlides2,
 .mySlides3 {
-  display: none;
+    display: none;
 }
 
-.prev, .next {
+.prev,
+.next {
     position: absolute;
     pointer-events: auto;
     cursor: pointer;
@@ -147,7 +189,7 @@
     align-items: center;
 
     border-radius: 1000px;
-    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.16); 
+    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.16);
     user-select: none;
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
@@ -156,77 +198,80 @@
     transition: all 0.3s ease;
     z-index: 1;
 
- a {
-    margin: 0 auto;
-    padding: 0 0;
-  }
+    a {
+        margin: 0 auto;
+        padding: 0 0;
+    }
 }
 
 .next {
-  right: $space-s;
+    right: $space-s;
 }
 
 .prev {
-  left: $space-s;
+    left: $space-s;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,1);
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 1);
 }
 
 
 
 
+/* -------------------------- Media Queries --------------------------  */
 
 @media (min-width: 900px) {
 
-    .prev, .next {
+    .prev,
+    .next {
         display: none;
     }
 
     #selectedWork-section,
     #work-section {
         ul {
-                li:hover {
-                    background-color: $clr-bg-hover;
+            li:hover {
+                background-color: $clr-bg-hover;
 
-                    a {
-                        color: $clr-type-body;
-                    }
-
-                    .prev, .next {
-                        display: flex;
-                    }
-
-                    
+                a {
+                    color: $clr-type-body;
                 }
 
-                .project-thumbnail {
-                    display: grid;
-                    grid-template-columns: 4fr 6fr;
-                    grid-template-rows: 1fr;
-                    align-items: center;
-                    gap: $space-m;
-                    }
-
-                    .project-content {
-                        max-width: 350px;
-                        height: 100%;
-                        max-height: 275px;
-                        justify-content: space-between;
-
-                        .project-details {
-                            flex-direction: column-reverse;
-
-                            h3 {
-                                font-size: $type-xl;
-                                line-height: 150%;
-                                letter-spacing: -0.03rem;
-                            }
-                        }
-                    }
+                .prev,
+                .next {
+                    display: flex;
                 }
 
+
+            }
+
+            .project-thumbnail {
+                display: grid;
+                grid-template-columns: 4fr 6fr;
+                grid-template-rows: 1fr;
+                align-items: center;
+                gap: $space-m;
+            }
+
+            .project-content {
+                max-width: 350px;
+                height: 100%;
+                max-height: 275px;
+                justify-content: space-between;
+
+                .project-details {
+                    flex-direction: column-reverse;
+
+                    h3 {
+                        font-size: $type-xl;
+                        line-height: 150%;
+                        letter-spacing: -0.03rem;
+                    }
                 }
+            }
+        }
+
+    }
 }
