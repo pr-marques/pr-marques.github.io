@@ -226,7 +226,8 @@
 
     .prev,
     .next {
-        display: none;
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
     }
 
     #selectedWork-section,
@@ -241,7 +242,7 @@
 
                 .prev,
                 .next {
-                    display: flex;
+                    opacity: 1;
                 }
 
 

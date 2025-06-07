@@ -3,33 +3,35 @@
     bottom: $space-l;
     right: $space-l;
     border: none;
+    outline: none;
     background-color: $clr-bg-sec;
+    color: white;
     cursor: pointer;
+    pointer-events: none;
     border-radius: 100%;
 
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.6s ease-in-out;
+}
 
-    :hover {
-        background-color: $clr-bg-pri;
-    }
+#back-to-top-container button {
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    padding: $space-s;
+    transition: all 0.15s ease-in-out;
+}
 
-    button {
-        padding: 0;
-        box-shadow: none;
-        border: none;
-        background-color: transparent;
-        padding: $space-s;
-        transition: all 0.15s ease-in-out;
-
-        :hover {
-            transform: translateY(-3px);
-        }
-    }
+#back-to-top-container button:hover {
+    transform: translateY(-3px);
 }
 
 #back-to-top-container.show {
     opacity: 1;
     pointer-events: auto;
+}
+
+#back-to-top-container:hover {
+    background-color: $clr-bg-pri;
 }
